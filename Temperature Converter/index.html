@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+    
+    <div class="container1">
+    <h1>Temperature Conveter</h1><br>
+    <div class="text">
+    <span style="background: transparent;">Temperature:</span> <input type="text" id="temp" placeholder="Temp" required>
+    <span style="background: transparent;">Choose:</span> <select id="mySelect" required>
+        <option value="null">Select Option</option>
+        <option value="ftemp">Fahrenheit to Celsius</option>
+        <option value="ctemp">Celsius to Fahrenheit</option>
+        <option value="ctemp1">Celsius to kelvin</option>
+    </select>
+    </div>
+    <i class="fas fa-caret-left"></i>
+    <br><button onclick="temp()" class="bt1">Convert</button>
+    <button onclick="reset()" class="bt2">Reset</button>
+    <br>
+    <h2>Answer Field</h2>
+    <div id="answer" class="answer" style=" text-align: center; color: #fff;"></div>
+ 
+</div>
+
+
+
+</div>
+
+    <script src="./script/script.js"></script>
+   
+
+</body>
+
+</html>
